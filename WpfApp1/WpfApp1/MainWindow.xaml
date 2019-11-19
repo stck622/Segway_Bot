@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="514" Width="1263">
+    <Grid Margin="0,0,-363,-72">
+
+        <Slider x:Name="P_SLIDER" HorizontalAlignment="Left" Margin="43,87,0,0" VerticalAlignment="Top" Orientation="Vertical" Height="242" Width="81" PreviewMouseLeftButtonUp="P_SLIDER_PreviewMouseLeftButtonUp" Maximum="1000" ValueChanged="P_SLIDER_ValueChanged" />
+        <TextBox x:Name="P_TEXT" TextAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="13,350,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="81" FocusableChanged="P_TEXT_FocusableChanged"/>
+
+        <Slider x:Name="I_SLIDER" HorizontalAlignment="Left" Margin="129,87,0,0" VerticalAlignment="Top" Orientation="Vertical" Height="242" Width="81" />
+        <TextBox x:Name="I_TEXT" TextAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="99,350,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="81"/>
+
+        <Slider x:Name="D_SLIDER" HorizontalAlignment="Left" Margin="215,87,0,0" VerticalAlignment="Top" Orientation="Vertical" Height="242" Width="81" />
+        <TextBox x:Name="D_TEXT" TextAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="185,350,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="81"/>
+
+        <ProgressBar x:Name="X_RPOSS" HorizontalAlignment="Left" Height="242" Margin="310,80,0,0" VerticalAlignment="Top" Width="22" Value="50.5" Orientation="Vertical"/>
+        <TextBlock x:Name="X_TEXT" HorizontalAlignment="Left" Margin="296,350,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+        <ProgressBar x:Name="Y_RPOSS" HorizontalAlignment="Left" Height="242" Margin="402,80,0,0" VerticalAlignment="Top" Width="22" Value="50.5" Orientation="Vertical"/>
+        <TextBlock x:Name="Y_TEXT" HorizontalAlignment="Left" Margin="386,350,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+        <ProgressBar x:Name="Z_RPOSS" HorizontalAlignment="Left" Height="242" Margin="496,80,0,0" VerticalAlignment="Top" Width="22" Value="50.5" Orientation="Vertical"/>
+        <TextBlock x:Name="Z_TEXT" HorizontalAlignment="Left" Margin="480,350,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        
+        <Button x:Name="send" Content="전송" HorizontalAlignment="Left" Margin="13,400,0,0" VerticalAlignment="Top" Width="253" Height="39"/>
+
+
+    </Grid>
+
+
+
+</Window>
